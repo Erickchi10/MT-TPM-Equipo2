@@ -30,3 +30,13 @@ Dentro de la carpeta del proyecto, ejecutar:
 
 - **practica_02_propina**: ejemplo guiado del manual, calculadora de propina (consumo, porcentaje con Slider, cálculo de propina y total).
 - **practica_02_combustible**: ejercicio evaluable, calculadora de rendimiento de combustible (km/L), con validación de entradas, botón de limpiar y clasificación en tres niveles (Bajo, Medio, Alto).
+
+## Práctica 3 — Formularios, Validación, Listas y Diseño Responsivo
+
+### Objetivo
+Construir un formulario validado, manejar eventos y mostrar registros en una lista adaptable a distintos tamaños de pantalla.
+
+### Proyectos incluidos
+- **practica_03_registro**: ejemplo guiado del manual, formulario de registro de estudiantes (nombre, correo, semestre) con validación, `ListView` de estudiantes registrados con opción de eliminar, y diseño responsivo (ancho máximo de 600px en pantallas grandes).
+- **practica_03_productos**: ejercicio evaluable, formulario de registro de productos (nombre, categoría, precio, existencia) con validación de datos, `ListView` de productos, eliminación y cálculo del valor total del inventario.
+
