@@ -40,3 +40,27 @@ Construir un formulario validado, manejar eventos y mostrar registros en una lis
 - **practica_03_registro**: ejemplo guiado del manual, formulario de registro de estudiantes (nombre, correo, semestre) con validación, `ListView` de estudiantes registrados con opción de eliminar, y diseño responsivo (ancho máximo de 600px en pantallas grandes).
 - **practica_03_productos**: ejercicio evaluable, formulario de registro de productos (nombre, categoría, precio, existencia) con validación de datos, `ListView` de productos, eliminación y cálculo del valor total del inventario.
 
+## Práctica 4 — Navegación, Rutas y Componentes Reutilizables
+
+### Objetivo
+Organizar una aplicación en múltiples archivos (models, screens, widgets), crear componentes reutilizables y navegar entre pantallas pasando datos.
+
+### Requisitos
+- Flutter y Visual Studio Code
+- Git y GitHub
+
+### Instalación
+1. Clonar el repositorio
+2. Entrar a la carpeta del proyecto deseado (`practica_04_catalogo` o `practica_04_materias`)
+3. Ejecutar `flutter pub get`
+
+### Ejecución
+
+flutter run -d chrome
+
+### Proyectos incluidos
+- **practica_04_catalogo**: ejemplo guiado. Catálogo de productos con navegación de lista a detalle, usando el modelo `Producto` y el widget reutilizable `ProductoCard`.
+- **practica_04_materias**: ejercicio evaluable. Catálogo de 6 materias con navegación a pantalla de detalle (nombre, semestre, créditos y descripción), usando el modelo `Materia` y el widget reutilizable `MateriaCard`.
+
+### Participantes
+Erick Chi
