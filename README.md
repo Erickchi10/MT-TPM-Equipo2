@@ -64,3 +64,45 @@ flutter run -d chrome
 
 ### Participantes
 Erick Chi
+
+
+## Práctica 5 — Consumo de API REST y Procesamiento JSON
+
+### Objetivo
+Consumir un servicio REST mediante HTTP, convertir JSON a objetos Dart y representar estados de carga, éxito y error.
+
+### Requisitos
+- Flutter y Visual Studio Code
+- Git y GitHub
+- Conexión a Internet
+- Paquete `http`
+
+### Instalación
+1. Clonar el repositorio
+2. Entrar a la carpeta del proyecto deseado (`practica_05_api` o `practica_05_posts`)
+3. Ejecutar `flutter pub get`
+
+### Ejecución
+
+flutter run -d chrome
+
+También se puede ejecutar en el emulador de Android con `flutter run -d emulator-5554`.
+
+### API utilizada
+- Servicio: JSONPlaceholder (https://jsonplaceholder.typicode.com)
+- Método: GET
+- Endpoints: `/users` (ejemplo guiado) y `/posts` (ejercicio evaluable)
+- Respuesta: JSON, con validación del código de estado 200
+
+### Proyectos incluidos
+- **practica_05_api**: ejemplo guiado. Lista de usuarios obtenida de la API con `http`, modelo `Usuario` con `fromJson`, `FutureBuilder` para los estados de carga, error, éxito y lista vacía, y `RefreshIndicator` para actualizar.
+- **practica_05_posts**: ejercicio evaluable. Lista de las 100 publicaciones del endpoint `/posts` (título y cuerpo), con indicador de carga, manejo de error con botón Reintentar, actualización con `RefreshIndicator` y pantalla de detalle al tocar una publicación. Organizado en `models`, `services` y `screens`.
+
+### Pruebas realizadas
+- `flutter analyze`: sin problemas en ambos proyectos
+- `flutter test`: 2 pruebas en `practica_05_api` y 6 en `practica_05_posts`, todas aprobadas
+- Pruebas manuales en Chrome y en el emulador de Android (lista, detalle, error HTTP 404 y actualización)
+- Capturas en `docs/evidencias/practica-05/`
+
+### Participantes
+Erick Chi
