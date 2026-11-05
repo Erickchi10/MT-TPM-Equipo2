@@ -106,3 +106,37 @@ También se puede ejecutar en el emulador de Android con `flutter run -d emulato
 
 ### Participantes
 Erick Chi
+
+## Práctica 6 - Persistencia local y funcionamiento offline
+
+### Objetivo
+Persistir preferencias simples y registros estructurados en almacenamiento local, implementando operaciones CRUD y una estrategia básica offline.
+
+### Requisitos
+- Flutter 3.47.2 y Dart 3.13.2
+- Paquetes: `sqflite`, `shared_preferences` y `path`
+- Emulador Android (`sqflite` no funciona en Chrome)
+- Modo de desarrollador de Windows activado (necesario para compilar plugins)
+
+### Instalación
+1. Clonar el repositorio y cambiar a la rama `practica-06-persistencia`.
+2. Entrar a `practica_06_notas` o `practica_06_tareas`.
+3. Ejecutar `flutter pub get`.
+
+### Ejecución
+Con el emulador encendido: `flutter run -d emulator-5554`
+
+### Proyectos incluidos
+- `practica_06_notas` (ejemplo guiado): notas con SQLite (crear, listar, editar y eliminar con confirmación), nombre de usuario con SharedPreferences y bandera `pendiente_sincronizar`.
+- `practica_06_tareas` (ejercicio evaluable): gestor offline de tareas con SQLite (crear, consultar, editar, eliminar y marcar completada), filtro Todas/Pendientes/Completadas guardado con SharedPreferences y validaciones (vacío, mínimo 3 y máximo 60 caracteres, sin repetidas).
+
+### Pruebas
+- `flutter analyze`: sin problemas en ambos proyectos.
+- `flutter test`: 3 pruebas en `practica_06_notas` y 5 en `practica_06_tareas`, todas aprobadas.
+- Manuales en emulador Android: CRUD, datos conservados al reiniciar, preferencia conservada y funcionamiento en modo avión.
+
+### Evidencias
+Capturas en `docs/evidencias/practica-06/`.
+
+### Participantes
+- Erick de los Ángeles Chi Calan
