@@ -313,7 +313,7 @@ class DatabaseHelper {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         titulo TEXT NOT NULL,
         descripcion TEXT,
-        completada INTEGER NOT NULL DEFAULT 0;
+        completada INTEGER NOT NULL DEFAULT 0,
         pendiente_sincronizar INTEGER NOT NULL DEFAULT 0
       )
     ''');
